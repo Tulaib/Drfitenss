@@ -509,14 +509,14 @@ const Home = () => {
                     >
                       Get started as Consumer <i className="simple-icon-arrow-right" />
                     </Link>
-                    <Link
+                    <a
                       className="btn btn-light btn-xl mr-2 mb-2"
                       // href={adminRoot}
                       // target="_blank"
-                      to="/login"
+                      href='https://drfitnessconsultant.netlify.app/'
                     >
                       Get started as Consultant, Trainer <i className="simple-icon-arrow-right" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="col-12 col-xl-7 offset-xl-1 col-lg-7 col-md-6  d-none d-md-block">
