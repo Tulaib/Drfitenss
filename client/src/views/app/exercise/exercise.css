@@ -1,0 +1,6 @@
+body.-webkit-scrollbar-thumb {
+    border: 5px solid transparent !important;
+    border-radius: 100px !important;
+    background-color: #8070d4 !important;
+    background-clip: content-box !important;
+}

@@ -1,0 +1,26 @@
+.global-cont{
+    width: 100% !important;
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+}
+@media (max-width: 1225px) {
+    .global-cont{
+    max-width: 90% !important;}
+  }
+
+  .global-btn{
+    text-decoration: none !important;
+    display: inline-block !important;
+    background: #63d471 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    padding: 12px 14px !important;
+    transition: all 500ms ease-in-out !important;
+    
+  }
+  .global-btn:hover {
+    background: #7eca87 !important;
+  }
+  #global-img{
+    margin: 20px 0 !important;
+  }

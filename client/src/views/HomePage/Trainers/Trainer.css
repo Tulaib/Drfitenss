@@ -1,0 +1,110 @@
+.trainers{
+    width: 100% !important;
+  padding: 120px 0 !important;
+  text-align: center !important;
+}
+#trainer-h2{
+    color: #232d39 !important;
+    font-weight: 900 !important;
+    font-size: 36px !important;
+    letter-spacing: 1.3px !important;
+    line-height: 1 !important;
+}
+#trainer-span{
+  color: #63d471 !important;
+}
+#trainer-p{
+    color: #7a7a7a !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+}
+.trainer-cont{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 50px 0 0 0 !important;
+}
+
+@media (max-width: 650px) {
+    #trainer-p {
+      padding: 0 30px !important;
+    }
+      br {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 830px) {
+        .trainer-cont {
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+      }
+      @media (min-width: 831px) and (max-width: 1226px) {
+        .trainer-cont {
+          flex-wrap: wrap !important;
+          justify-content: space-between !important;
+          max-width: 780px !important;
+        }
+      }
+
+/* Trainer Card  */
+
+.trainer-card{
+    width: 100% !important;
+  max-width: 31% !important;
+  background: #fff !important;
+  padding: 44px !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: left !important;
+  border-radius: 4px !important;
+}
+.trainer-img{
+    width: 100% !important;
+    height: 250px !important;
+}
+.trainer-h5{
+    color: #63d471 !important;
+    margin: 26px 0 9px 0 !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+.trainer-h3{
+    color: #232d39 !important;
+    letter-spacing: 1px !important;
+}
+.trainer-p{
+    margin: 24px 0 28px 0 !important;
+    color: #7a7a7a !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 1.7 !important;
+}
+@media (max-width: 830px) {
+    .trainer-card{
+    max-width: 540px !important;
+    margin: 14px 0 !important;}
+  }
+  @media (min-width: 831px) and (max-width: 1226px) {
+      .trainer-card{
+    max-width: 47% !important;
+    margin: 14px 0 !important;
+}
+  }
+
+  /* Social */
+
+  .socials{
+    display: flex !important;
+    align-items: center !important;
+  }
+  i {
+    margin-right: 18px !important;
+    transition: color 600ms ease-in-out !important;
+    cursor: pointer !important; 
+  }
+  i:hover {
+    color: #63d471 !important;
+  }
