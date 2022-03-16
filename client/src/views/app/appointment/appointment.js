@@ -23,6 +23,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { auth, db } from 'firebase';
 import moment from 'moment';
+import { string } from 'prop-types';
 
 const Appointment = ({ match }) => {
   const [selectedRadio, setSelectedRadio] = useState('1');
@@ -188,6 +189,7 @@ const Appointment = ({ match }) => {
                                 <th>Doctor Name</th>
                                 <th>Appoitment Date</th>
                                 <th>Appoitment Time</th>
+                                <th>Created AT</th>
                                 <th>Status</th>
                                 <th>Fee</th>
                                 {/* <th>Action</th> */}
@@ -197,6 +199,10 @@ const Appointment = ({ match }) => {
                               Appointments.filter(
                                 (item) => item.status === 'pending'
                               ).map((item, index) => {
+                                var t = item.createAt
+                                t = new Date()
+                                var a = String(t)
+                                // console.log('im a',a)
                                 return (
                                   <>
                                     <tbody>
@@ -217,6 +223,7 @@ const Appointment = ({ match }) => {
                                           {item.selectedDate} {item?.Day}
                                         </td>
                                         <td>{item.slotTime}</td>
+                                        <td>{a}</td>
                                         <td>{item.status}</td>
                                         <td>{item.fee}</td>
                                         <td>
